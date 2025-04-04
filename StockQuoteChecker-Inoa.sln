@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35825.156 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockQuoteChecker-Inoa", "StockQuoteChecker-Inoa.csproj", "{68B829C8-7EE3-4281-AC06-964853DD08E7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{68B829C8-7EE3-4281-AC06-964853DD08E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68B829C8-7EE3-4281-AC06-964853DD08E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68B829C8-7EE3-4281-AC06-964853DD08E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68B829C8-7EE3-4281-AC06-964853DD08E7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {846B8362-4B90-4EB8-B79C-3892CFAD9E24}
+	EndGlobalSection
+EndGlobal
