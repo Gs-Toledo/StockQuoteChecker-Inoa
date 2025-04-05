@@ -2,6 +2,5 @@
 
 public interface IEmailService
 {
-    Task SendEmailAlert(string subject, string body);
+    Task SendAlertAsync(string subject, string body);
 }
-

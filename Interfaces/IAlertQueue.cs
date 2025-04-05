@@ -2,7 +2,9 @@
 
 namespace StockQuoteChecker_Inoa.Interfaces;
 
-public interface IStockQuoteService
+public interface IAlertQueue
 {
-    Task<StockQuote> GetQuoteAsync(string symbol);
+    void Enqueue(Alert alert);
+    Alert Dequeue();
 }
+

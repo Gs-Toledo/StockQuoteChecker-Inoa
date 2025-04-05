@@ -1,9 +1,6 @@
 ﻿namespace StockQuoteChecker_Inoa.Interfaces;
 
-
-public interface ICommandHandler
+public interface ICommandHandler<TCommand>
 {
-    Task ExecuteAsync(string symbol, decimal sellPrice, decimal buyPrice, CancellationToken token);
+    Task HandleAsync(TCommand command, CancellationToken cancellationToken = default);
 }
-
-
