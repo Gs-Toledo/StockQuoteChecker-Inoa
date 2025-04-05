@@ -1,6 +1,6 @@
 ﻿using System.Text.Json;
 
-namespace StockQuoteChecker_Inoa.Models;
+namespace StockQuoteChecker_Inoa.Models.HgBrasil;
 
 class HgBrasilResponse
 {

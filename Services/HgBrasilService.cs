@@ -2,6 +2,7 @@
 using Microsoft.Extensions.Options;
 using StockQuoteChecker_Inoa.Interfaces;
 using StockQuoteChecker_Inoa.Models;
+using StockQuoteChecker_Inoa.Models.HgBrasil;
 
 
 namespace StockQuoteChecker_Inoa.Services;
@@ -21,7 +22,7 @@ class HgBrasilService : IStockQuoteService
     {
         try
         {
-            string url = $"{_apiSettings.FinanceApiUrl}?symbol={symbol}&key={_apiSettings.HgBrasilApiKey}";
+            string url = $"{_apiSettings.HgBrasilApiUrl}?symbol={symbol}&key={_apiSettings.HgBrasilApiKey}";
             var response = await _httpClient.GetAsync(url);
             response.EnsureSuccessStatusCode();
 

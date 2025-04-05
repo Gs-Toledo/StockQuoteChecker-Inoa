@@ -1,6 +1,6 @@
 ﻿using System.Text.Json.Serialization;
 
-namespace StockQuoteChecker_Inoa.Models;
+namespace StockQuoteChecker_Inoa.Models.HgBrasil;
 
 class HgBrasilQuote
 {

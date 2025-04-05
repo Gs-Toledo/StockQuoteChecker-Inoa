@@ -32,7 +32,7 @@ public class CheckStockCommandHandler : ICommandHandler<CheckStockCommand>
                     {
                         Symbol = command.Symbol,
                         CurrentPrice = cotacao.Price,
-                        Message = $"{command.Symbol} está acima de R$ {command.HighPrice}: R$ {cotacao.Price}"
+                        Message = $"Olá,você recebeu um alerta, pois o Ativo {command.Symbol} está acima de R$ {command.HighPrice}, valor atual R$ {cotacao.Price}"
                     });
                 }
                 else if (cotacao.Price <= command.LowPrice)
@@ -42,7 +42,7 @@ public class CheckStockCommandHandler : ICommandHandler<CheckStockCommand>
                     {
                         Symbol = command.Symbol,
                         CurrentPrice = cotacao.Price,
-                        Message = $"{command.Symbol} está abaixo de R$ {command.LowPrice}: R$ {cotacao.Price}"
+                        Message = $"Olá,você recebeu um alerta, pois o Ativo {command.Symbol} está abaixo de R$ {command.LowPrice}, valor atual R$ {cotacao.Price}"
                     });
                 }
                 else

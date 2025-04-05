@@ -5,6 +5,7 @@ using StockQuoteChecker_Inoa.Commands;
 using StockQuoteChecker_Inoa.Handlers;
 using StockQuoteChecker_Inoa.Interfaces;
 using StockQuoteChecker_Inoa.Models;
+using StockQuoteChecker_Inoa.Models.YahooFinance;
 using StockQuoteChecker_Inoa.Services;
 
 if (args.Length != 3)
@@ -31,11 +32,11 @@ using IHost host = Host.CreateDefaultBuilder()
         IConfiguration configuration = context.Configuration;
 
         services.Configure<StockAlertSettings>(configuration.GetSection("EmailSettings"));
-        services.Configure<HgApiSettings>(configuration.GetSection("ApiSettings"));
+        services.Configure<YahooApiSettings>(configuration.GetSection("ApiSettings"));
 
 
         services.AddSingleton<IEmailService, EmailService>();
-        services.AddSingleton<IStockQuoteService, HgBrasilService>();
+        services.AddSingleton<IStockQuoteService, YahooFinanceService>();
 
         services.AddSingleton<IAlertQueue, AlertQueue>();
         services.AddHostedService<AlertNotificationService>();
